@@ -41,10 +41,9 @@ public class GenerateUsers {
 
     public static RegistrationData generateValidBlockedUser() {
         Faker faker = new Faker(new Locale("en"));
-        RegistrationData valid = new RegistrationData(
-                faker.name().username().toLowerCase(),
-                faker.internet().password(),
-                "blocked");
+        String name = faker.name().username().toLowerCase();
+        String password = faker.internet().password();
+        RegistrationData valid = new RegistrationData(name, password, "blocked");
         setUpAll(valid);
         return valid;
     }

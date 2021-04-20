@@ -22,7 +22,10 @@ dependencies {
     implementation 'io.rest-assured:rest-assured:4.3.0'
     implementation 'com.google.code.gson:gson:2.8.6'
 
-    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    compile 'org.projectlombok:lombok:1.18.12'
+
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
 }
 
 test {

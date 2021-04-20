@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RegistrationData {
-    public String login;
-    public String password;
-    public String status;
+    private String login;
+    private String password;
+    private String status;
 }
